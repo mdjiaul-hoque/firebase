@@ -9,29 +9,34 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Notfound from './pages/Notfound.jsx';
+import NavBar from './Layout/NavBar.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App></App>
-  },
-  {
-    path: "/home",
+    element: <NavBar></NavBar>,
+    children:[
+      {
+    path: "/",
     element: <Home></Home>,
   },
-  {
-    path: "/about",
-    element: <About></About>
-  },
-  {
+       {
     path: "/contact",
     element: <Contact></Contact>
+  },
+   {
+    path: "/about",
+    element: <About></About>
   },
   {
     path: "*",
     element: <Notfound></Notfound>
   },
+
+    ]
+  },
+  
 ]);
 
 createRoot(document.getElementById('root')).render(
