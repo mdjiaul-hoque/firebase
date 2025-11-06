@@ -12,6 +12,7 @@ import Notfound from './pages/Notfound.jsx';
 import NavBar from './Layout/NavBar.jsx';
 import SignIn from './pages/SignIn.jsx';
 import Profile from './pages/Profile.jsx';
+import Product from './pages/Product.jsx';
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
     path: "/",
     element: <Home></Home>,
+  },
+  {
+    path: "/product",
+    element: <Product></Product>,
   },
   {
     path: "/profile",
