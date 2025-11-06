@@ -22,7 +22,13 @@ const SignIn = () => {
 
         if (email === "abc@gmail.com" && password === "123456") 
         {
-            navigate('/contact');
+            const user = {
+                name:'jiaul hoque',
+                email : 'abc@gmail.com',
+                city: 'comilla',
+                country: 'Bangladesh',
+            };
+            navigate('/profile', {state:user});
         }
         else{
             navigate('/about');
