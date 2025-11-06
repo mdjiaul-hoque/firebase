@@ -10,6 +10,7 @@ import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Notfound from './pages/Notfound.jsx';
 import NavBar from './Layout/NavBar.jsx';
+import SignIn from './pages/SignIn.jsx';
 
 
 const router = createBrowserRouter([
@@ -23,15 +24,19 @@ const router = createBrowserRouter([
   },
        {
     path: "/contact",
-    element: <Contact></Contact>
+    element: <Contact></Contact>,
+  },
+       {
+    path: "/signIn",
+    element: <SignIn></SignIn>,
   },
    {
     path: "/about",
-    element: <About></About>
+    element: <About></About>,
   },
   {
     path: "*",
-    element: <Notfound></Notfound>
+    element: <Notfound></Notfound>,
   },
 
     ]

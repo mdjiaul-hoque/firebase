@@ -6,13 +6,13 @@ const Contact = () => {
     const navigate = useNavigate();
 
     const handleGoToHome = ()=>{
-        navigate('/');
+        navigate('/about');
     };
 
     return (
         <div>
             <h1>contact</h1>
-            <button onClick={handleGoToHome}>go to home</button>
+            <button onClick={handleGoToHome}>go to about</button>
         </div>
     );
 };
