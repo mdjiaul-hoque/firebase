@@ -13,6 +13,7 @@ import NavBar from './Layout/NavBar.jsx';
 import SignIn from './pages/SignIn.jsx';
 import Profile from './pages/Profile.jsx';
 import Product from './pages/Product.jsx';
+import ProductsDetels from './components/ProductsDetels.jsx';
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/product",
     element: <Product></Product>,
+  },
+  {
+    path: "/product/:id",
+    element: <ProductsDetels></ProductsDetels>
   },
   {
     path: "/profile",
